@@ -1,24 +1,16 @@
 import './App.css'
-import { Typography } from '@mui/material'
-import { theme } from './theme'
+import { Route, Routes } from 'react-router-dom'
+import Admin from './UserArea/Admin'
+import User from './UserArea/User'
+import ProjectLeader from './UserArea/ProjectLeader'
 
 function App() {
   return (
-    <div className='App'>
-      <Typography
-        variant='body2'
-        color={theme.palette.sidebar.dark}
-        sx={{ color: theme.palette.sidebar.main }}>
-        Edit <code>src/App.js</code> and save to reload.
-      </Typography>
-      <a
-        className='App-link'
-        href='https://reactjs.org'
-        target='_blank'
-        rel='noopener noreferrer'>
-        Learn React
-      </a>
-    </div>
+    <Routes>
+      <Route path={'/admin/*'} element={<Admin />} />
+      <Route path={'/project-leader/*'} element={<ProjectLeader />} />
+      <Route path={'/user/*'} element={<User />} />
+    </Routes>
   )
 }
 
