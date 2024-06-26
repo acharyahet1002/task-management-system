@@ -14,6 +14,18 @@ export const theme = createTheme({
       light: '#AED581',
       contrastText: '#fff',
     },
+    input: {
+      dark: '#33691E',
+      main: '#8BC34A',
+      light: '#AED581',
+      contrastText: '#fff',
+    },
+    text: {
+      dark: '#33691E',
+      main: '#8BC34A',
+      light: '#AED581',
+      contrastText: '#fff',
+    },
   },
   typography: {
     h1: {
